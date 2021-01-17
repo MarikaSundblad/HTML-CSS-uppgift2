@@ -42,7 +42,7 @@ html, body {
 .btn-white {
     border: 2px solid #fff;
     color: #fff;
-    background-color: transparent;
+    background-color: #3096FE;
     padding: 0.7rem 2rem;
     border-radius: 0.8rem;
     font-weight: 500;
@@ -131,13 +131,19 @@ html, body {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2rem;
+    position: relative;
 }
 .nav-link:hover {
     color: #FFBB00;
 }
-.line:hover{
-    border-bottom: 3px solid #FFBB00;
-    padding-bottom: 4px;
+.nav-link:hover::before {
+    content: "";
+    height: 3px;
+    background: #FFBB00;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.5rem;
+    right: 1.3rem;
   }
   /* NAVBAR END */
 
@@ -164,13 +170,13 @@ html, body {
 
 .watchvideo {
     text-decoration: none;
-    color: #fff;
+    color: #FFBB00;
     font-weight: 500;
     align-items: center;
     margin-left: 1rem;
 }
 .watchvideo:hover {
-    color: #FFBB00;
+    color: #d19a04;
 }
 .iphone {
     width: 100%;
@@ -212,12 +218,6 @@ html, body {
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.animation-about-us {
-    animation-name: slide-in-about;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-}
 /* ABOUT US END */
 
 /* FEATURES START */
@@ -237,10 +237,6 @@ html, body {
 }
 .mobile-tilt {
     max-width: 100%;
-}
-.phone-fade {
-    animation: fadeIn ease 5s;
-    
 }
 /* FEATURES END */
 
@@ -279,8 +275,9 @@ html, body {
     width: 100%;
 }
 .phone-group {
-    height: 400px;
-    width: auto;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 /* CALL TO ACTION END */
 
@@ -317,9 +314,10 @@ html, body {
 }
 .footer-menu {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
+} 
 .footer-menu a {
     text-decoration: none;
     padding: 1rem;
@@ -359,27 +357,7 @@ html, body {
     color: #FFBB00;
     background-color: #ffbb0026;
 }
-
 /* FOOTER END */
-
-/* KEYFRAMES START */
-@keyframes slide-in-about {
-    from {
-        margin-right: 100%;
-        width: 300%;
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-}
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-/* KEYFRAMES END */
-
 
 
 /*MEDIA QUERIES*/
@@ -392,18 +370,25 @@ html, body {
     .textcolor-white p {
         text-align: left;
     }
-    .watchvideo {
-        color: #FFBB00;
+    .btn-white {
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: transparent;
     }
-    .watchvideo:hover {
-        color: #d19a04;
-    }
+    /* .btn-white:hover {
+        background-color: #fff;
+        color: #1487FD;
+        border:2px solid transparent;
+    } */
     .showcase-action {
         justify-content: right;
         align-items: flex-start;
     }
     .logo-display img {
         padding: 1rem;
+    }
+    .footer-menu {
+        flex-direction: row;
     }
 }
 
@@ -462,6 +447,9 @@ html, body {
         width: 70%;
         margin: auto;
         padding-top: 12rem;
+    }
+    .h1-white {
+        width: 90%;
     }
     .p-white {
         width: 70%;

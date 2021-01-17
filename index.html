@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -21,11 +22,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
-                  <li class="nav-item pe-4"><a class="nav-link active" aria-current="page" href="#"><span class="line">Hom</span>e</a></li>
-                  <li class="nav-item pe-4"><a class="nav-link" href="#"><span class="line">Abo</span>ut Us</a></li>
-                  <li class="nav-item pe-4"><a class="nav-link" href="#"><span class="line">Fea</span>tures</a></li>
-                  <li class="nav-item pe-4"><a class="nav-link" href="#"><span class="line">Scr</span>eens</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="line">Con</span>tact Us</a></li>
+                  <li class="nav-item pe-4"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                  <li class="nav-item pe-4"><a class="nav-link" href="#">About Us</a></li>
+                  <li class="nav-item pe-4"><a class="nav-link" href="#">Features</a></li>
+                  <li class="nav-item pe-4"><a class="nav-link" href="#">Screens</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
               </ul>
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                   <button class="btn me-md-2 btn-yellow" type="button">Get the app</button>
@@ -37,12 +38,12 @@
         <!-- SHOWCASE START -->
       <section id="showcase" class="container">
         <div class="row mx-auto">
-          <div class="col-sm my-auto m-0 p-0 row">
+          <div class="col-sm my-auto m-0 p-0 row wow animate__animated animate__slideInLeft" data-wow-offset="250">
             <div class="flex-column p-0 textcolor-white">
               <h1>Creative Way to Showcase Your App</h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply</p>
             </div>
-            <div class="showcase-action p-0">
+            <div class="showcase-action p-0 wow animate__animated animate__slideInLeft" data-wow-offset="250">
               <button class="btn btn-white">Download Now</button>
               <div class="play-action pt-3 pt-lg-0">
                 <a class="playbutton" href="#"><img src="img/playbutton.png" alt="playbutton"></a>
@@ -50,7 +51,7 @@
               </div>
             </div>
           </div>  
-          <div class="col-sm p-0">
+          <div class="col-sm p-0 d-none d-sm-block wow animate__animated animate__slideInRight" data-wow-offset="250">
             <img class="iphone ms-3 mt-5" src="img/2iphones.png" alt="2 iPhoneX">
           </div>
         </div>
@@ -67,15 +68,15 @@
     <!-- LOGO END -->
     <!-- ABOUT US START-->
     <section id="about-us" class="container my-5 py-5">
-      <div class="row animation-about-us">
-        <div class="hidden-md col-lg dots ">
+      <div class="row">
+        <div class="hidden-md col-lg dots wow animate__animated animate__slideInLeft" data-wow-offset="250">
           <img class="d-none d-lg-grid" src="img/iphone-dots.png" alt="iphone">
         </div>
-        <div class="col about-us-info ">
+        <div class="col about-us-info wow animate__animated animate__slideInRight" data-wow-offset="250" data-wow-delay="0.2s">
           <a href="#"><h6 class="h6-yellow mt-4">About Us</h6></a>
           <h2 class="h2-blackish h2-about-us">Easy To Search Your Items By This App</h2>
           <p class="about-us-p-width">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-          <div class="stores">
+          <div class="stores wow animate__animated animate__slideInRight" data-wow-offset="250" data-wow-delay="0.2s">
             <a href="#"><img src="img/Google-play.png" alt="Google Play"></a>
             <a href="#"><img src="img/App-Store.png" alt="App Store"></a>
           </div>
@@ -140,8 +141,8 @@
           </div>
           <!-- FEATURES ICONS END -->
         </div>
-        <div class="hidden-md col-lg">
-          <img class="d-none d-lg-grid mobile-tilt phone-fade" src="img/Mobile-tilt.png" alt="Two mobiles">
+        <div class="hidden-md col-lg wow animate__animated animate__fadeInTopRight" data-wow-offset="200">
+          <img class="d-none d-lg-grid mobile-tilt" src="img/Mobile-tilt.png" alt="Two mobiles">
         </div>
       </div>
     </section>
@@ -170,26 +171,26 @@
     <!-- APPLICATIONS STATISTICS START -->
     <div class="container">
       <div class="background-map">
-        <div class="d-flex flex-column align-items-center">
+        <div class="d-flex flex-column align-items-center wow animate__animated animate__fadeInUp" data-wow-offset="200">
           <h2 class="h2-blackish pt-5 mb-2">Application Statistics</h2>
           <p class="p-width mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
         </div>
         <div class="row justify-content-between align-items-center mx-lg-5 mb-5">
-          <div class="col-6 col-lg">
+          <div class="col-6 col-lg  wow animate__animated animate__fadeInUp" data-wow-offset="200">
             <p class="text-center blue-numbers">+ 1430</p>
             <h5 class="text-center h5-size">Clients</h5>
           </div>
-          <div class="col-6 col-lg">
+          <div class="col-6 col-lg wow animate__animated animate__fadeInUp" data-wow-offset="200" data-wow-delay="0.2s">
             <p class="text-center blue-numbers">+ 2430</p>
             <h5 class="text-center h5-size">Beneficiaries</h5>
           </div>
-          <div class="col-6 col-lg">
+          <div class="col-6 col-lg wow animate__animated animate__fadeInUp" data-wow-offset="200" data-wow-delay="0.4s">
             <p class="text-center blue-numbers">+ 1430</p>
             <h5 class="text-center h5-size">positive reviews</h5>
           </div>
-          <div class="col-6 col-lg">
-            <p class="text-center blue-numbers">+ 10.430</p>
-            <h5 class="text-center h5-size">Downloads</h5>
+          <div class="col-6 col-lg  wow animate__animated animate__fadeInUp" data-wow-offset="200" data-wow-delay="0.6s">
+              <p class="text-center blue-numbers">+ 10.430</p>
+              <h5 class="text-center h5-size">Downloads</h5>
           </div>
         </div>
       </div>
@@ -197,17 +198,17 @@
     <!-- APPLICATIONS STATISTICS END -->
     <!-- CALL TO ACTION START -->
     <div class="blue-bg">
-      <section class="container pt-5">
+      <section class="container">
         <div class="row">
-          <div class="col-12 col-lg-8 pb-xxl-5">
+          <div class="col-12 col-lg-7 pb-xxl-5">
             <h1 class="mt-2 pt-sm-5 h1-white">Download the application now ! to enjoy its features</h1>
             <p class="p-white py-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             <div class="row align-items-center g-1 pb-lg-5">
-              <a class="col-xxl-3 col-lg-4 col pb-3 me-lg-4" href="#"><img src="img/Google-play.png" alt="Google Play"></a>
+              <a class="col-xxl-3 col-lg-4 col pb-3 me-lg-5" href="#"><img src="img/Google-play.png" alt="Google Play"></a>
               <a class="col-xxl-3 col-lg-4 col pb-3 ms-lg-3" href="#"><img src="img/App-Store.png" alt="App Store"></a>
             </div>
           </div>
-          <div class="hidden-md col-lg-4 row align-items-end">
+          <div class="hidden-md col-lg-5 row align-items-end">
             <div class="col align-self-end d-none d-lg-grid ps-4">
               <img class="phone-group" src="img/three-phones.png" alt="Three mobiles">
             </div>
@@ -244,8 +245,6 @@
     </div>
     <!-- CONTACT US END -->
     <!-- FOOTER START -->
-
-    <!-- FOOTER END -->
     <div class="footer-bg">
       <footer class="container pt-5">
         <div class="footer">
@@ -266,14 +265,16 @@
         </div>
       </footer>
     </div>
+    <!-- FOOTER END -->
 
 
 
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
